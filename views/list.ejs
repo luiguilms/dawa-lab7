@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de canciones</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Lista de canciones</h1>
+  <ul>
+    <% songs.forEach(song => { %>
+      <li><%= song.title %> - <%= song.artist %> (Género: <%= song.genre %>)</li>
+    <% }); %>
+  </ul>
+</body>
+</html>
